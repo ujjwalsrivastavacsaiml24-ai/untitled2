@@ -13,6 +13,10 @@ void setup() {
         Serial.println("OLED not found");
         while (true);
     }
+
+    display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(SSD1306_WHITE);
 }
 void loop() {
 // write your code here
